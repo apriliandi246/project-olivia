@@ -1,3 +1,0 @@
-- Catalog product
-- Form contact
-- blog

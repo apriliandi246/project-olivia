@@ -6,6 +6,7 @@ body {
 }
 
 
+
 /* Back Button */
 
 .catalog-btn {
@@ -15,8 +16,8 @@ body {
 }
 
 .catalog-btn__back {
-   color: #000000;
    padding: 12px;
+   color: #000000;
    font-size: 23px;
    text-align: center;
    border-radius: 5px;
@@ -77,15 +78,9 @@ body {
 }
 
 
-@media screen and (min-width: 600px) {
-   .product-image {
-      width: 80%;
-   }
-}
-
 @media screen and (min-width: 1000px) {
    .container {
-      width: 46%;
+      width: 50%;
    }
 
    .product-detail__name {
