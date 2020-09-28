@@ -2,18 +2,21 @@ const icons = document.querySelectorAll('.collapse__icon');
 const collapseButtons = document.querySelectorAll('.collapse__button');
 
 for (let index = 0; index < collapseButtons.length; index++) {
-   collapseButtons[index].addEventListener('click', function () {
-      const collapseContent = collapseButtons[index].nextElementSibling;
+   collapseButtons[index].addEventListener('click', () => setCollapse(index));
+   collapseButtons[index].removeEventListener('click', () => setCollapse(index));
+}
 
-      this.classList.toggle('collapse__button--active');
+function setCollapse(index) {
+   const collapseContent = collapseButtons[index].nextElementSibling;
 
-      if (collapseContent.style.display === 'block') {
-         icons[index].innerHTML = '&#9650;';
-         collapseContent.style.display = 'none';
+   collapseButtons[index].classList.toggle("collapse__button--active");
 
-      } else {
-         icons[index].innerHTML = '&#9660;';
-         collapseContent.style.display = 'block'
-      }
-   });
+   if (collapseContent.style.display === 'block') {
+      icons[index].innerHTML = '&#9650;';
+      collapseContent.style.display = 'none';
+
+   } else {
+      icons[index].innerHTML = '&#9660;';
+      collapseContent.style.display = 'block'
+   }
 }

@@ -47,7 +47,6 @@ body {
 .hero__bottom-arrow {
    opacity: 0.8;
    color: #000000;
-   cursor: pointer;
    font-size: 4.2em;
    background-color: #dddddd;
    animation: bounce 2s infinite;
@@ -119,9 +118,10 @@ body {
 }
 
 .collapses__title {
-   font-size: 1.9em;
-   margin-top: 20px;
-   margin-bottom: 25px;
+   font-size: 1.7em;
+   margin-top: 30px;
+   text-align: center;
+   margin-bottom: 30px;
    font-family: monospace;
 }
 
@@ -178,9 +178,10 @@ body {
 }
 
 .contact__title {
-   font-size: 1.9em;
-   margin-top: 20px;
-   margin-bottom: 25px;
+   font-size: 1.7em;
+   margin-top: 50px;
+   text-align: center;
+   margin-bottom: 30px;
    font-family: monospace;
 }
 
@@ -190,7 +191,6 @@ body {
 
 .input-form__label {
    color: #000000;
-   font-weight: 520;
    font-size: 1.05em;
    font-family: monospace;
 }
@@ -219,7 +219,9 @@ body {
    cursor: pointer;
    color: #000000;
    margin-top: 25px;
+   margin-top: 30px;
    font-size: 1.05em;
+   margin-bottom: 30px;
    font-family: monospace;
    box-sizing: border-box;
    background-color: #fafafa;
@@ -240,29 +242,6 @@ body {
 }
 
 .button-form:hover {
-   background-color: #f3ebea;
-}
-
-
-.footer {
-   width: 100%;
-   box-sizing: border-box;
-   background-color: #fafafa;
-}
-
-.footer__top-arrow {
-   opacity: 0.8;
-   display: flex;
-   font-size: 3em;
-   color: #000000;
-   cursor: pointer;
-   align-items: center;
-   font-family: monospace;
-   justify-content: center;
-   transition: background-color 0.2s;
-}
-
-.footer__top-arrow:hover {
    background-color: #f3ebea;
 }
 

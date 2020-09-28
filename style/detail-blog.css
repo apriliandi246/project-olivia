@@ -1,6 +1,5 @@
 body {
    font-size: 16px;
-   font-family: Ubuntu;
    background-color: #f5f5f5;
 }
 
@@ -49,6 +48,7 @@ body {
    font-size: 2.2em;
    line-height: 49px;
    font-weight: bolder;
+   font-family: sans-serif;
 }
 
 .article-head__date {
@@ -68,12 +68,13 @@ body {
 .article__body p {
    font-size: 1.2em;
    word-spacing: 3px;
-   line-height: 28px;
+   line-height: 30px;
    margin-bottom: 40px;
    letter-spacing: 0.5px;
+   font-family: Ubuntu;
 }
 
-.article__body p img {
+.article__body img {
    height: auto;
    display: block;
    max-width: 100%;
@@ -102,7 +103,7 @@ body {
 
 @media screen and (min-width: 1200px) {
    .container {
-      width: 38%;
+      width: 36%;
    }
 
    .article {
