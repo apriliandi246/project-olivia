@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-   margin: 1px auto;
+   margin: 2px auto;
 }
 
 .card {
@@ -101,7 +101,7 @@ body {
 
    .card__description {
       padding: 20px;
-      font-size: 1.1em;
+      font-size: 1.05em;
    }
 }
 

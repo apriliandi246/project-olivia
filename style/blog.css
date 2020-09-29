@@ -1,6 +1,7 @@
 @import './navbar.css';
 
 
+
 body {
    font-size: 16px;
    background-color: #f5f5f5;
@@ -11,26 +12,20 @@ body {
 /* Blog */
 
 .container {
-   width: 92%;
-   color: #ffffff;
+   width: 90%;
+   margin: 110px auto;
    font-family: Ubuntu;
+   align-items: center;
    justify-content: center;
-   margin: 125px auto 50px auto;
+   padding: 20px;
 }
 
-.articles {
-   margin: 40px auto 5px auto;
-}
-
-.articles {
-   width: 96%;
-   display: flex;
-   margin-top: 40px;
-   flex-direction: column;
-   box-sizing: border-box;
-   background-color: #fafafa;
-   padding: 45px 35px 25px 35px;
-   box-shadow: 0 0 1px 1px #0000001a;
+.article {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 2px;
+  background-color: #fafafa;
+  box-shadow:  0 0 1px 1px #0000001a;
 }
 
 .article__title {
@@ -40,6 +35,7 @@ body {
    font-weight: bolder;
    text-decoration: none;
    transition: color 0.2s;
+   letter-spacing: 1px;
 }
 
 .article__title:hover {
@@ -51,30 +47,25 @@ body {
    font-size: 1.1em;
    line-height: 25px;
    letter-spacing: 2px;
-   margin: 15px 0 20px 0;
+   margin: 8px 0 20px 0;
    font-family: monospace;
 }
 
-.article__line {
-   margin: 115px 0 50px 0;
-   border: 1px solid #253341;
-}
-
 @media screen and (min-width: 620px) {
-   .container {
-      width: 70%;
-   }
-}
-
-@media screen and (min-width: 960px) {
    .container {
       width: 67%;
    }
 }
 
+@media screen and (min-width: 960px) {
+   .container {
+      width: 60%;
+   }
+}
+
 @media screen and (min-width: 1200px) {
    .container {
-      width: 38%;
+      width: 32%;
    }
 }
 
