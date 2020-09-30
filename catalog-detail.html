@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/reset.css">
    <link rel="stylesheet" href="./style/catalog-detail.css">
+   <script defer src="./js/theme.js"></script>
    <title>Document</title>
 </head>
 
@@ -16,7 +17,7 @@
 
    <div class="container">
       <div class="product-image">
-         <img src="./img/product/black_leather_chair.png" class="product-image__image" alt="product">
+         <img src="./img/product/black_leather_chair.png" loading="lazy" class="product-image__image" alt="product">
       </div>
 
       <div class="product-detail">
@@ -28,7 +29,16 @@
             voluptates fugiat ut quidem aliquid quos corporis, harum fugit minima temporibus laudantium laborum id
             tenetur commodi.</p>
       </div>
+
+      <div class="product-model">
+         <model-viewer src="./img/3d/black_leather_chair.gltf" ar ar-modes="webxr scene-viewer quick-look"
+            ar-scale="auto" auto-rotate camera-controls>
+         </model-viewer>
+      </div>
    </div>
+
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>
 
 </html>
