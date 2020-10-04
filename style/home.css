@@ -151,7 +151,7 @@ body {
    box-shadow: 0 0 1px 1px #0000001a;
 }
 
-.collapse__button--active,
+.collapse__button--active:hover,
 .collapse__button:hover {
    background-color: #f3ebea;
 }
@@ -176,11 +176,14 @@ body {
 
 #darkmode .collapse__content {
    color: #ffffff;
+   box-shadow: none;
    background-color: #15202b;
    border: 1px solid #38444d;
-   box-shadow: none;
 }
 
+#darkmode .collapse__content a {
+   color: #ffffff;
+}
 
 
 .contact {
@@ -260,7 +263,7 @@ body {
 
 
 #darkmode .contact {
-   background-color:  #15202b;
+   background-color: #15202b;
 }
 
 #darkmode .contact__title {
