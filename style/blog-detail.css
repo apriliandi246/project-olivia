@@ -7,8 +7,6 @@ body {
    background-color: #15202b;
 }
 
-
-
 .button-blog {
    width: 92%;
    font-weight: 480;
@@ -33,8 +31,6 @@ body {
 #darkmode .button-blog__back {
    color: #ffffff;
 }
-
-
 
 .container {
    width: 91%;
@@ -83,7 +79,7 @@ body {
    margin: 10px auto 40px auto;
 }
 
-#darkmode .article-head__title, 
+#darkmode .article-head__title,
 #darkmode p {
    color: #ffffff;
 }

@@ -1,7 +1,6 @@
 @import './navbar.css';
 
 
-
 body {
    font-size: 16px;
    background-color: #f5f5f5;
@@ -10,8 +9,6 @@ body {
 #darkmode {
    background-color: #15202b;
 }
-
-
 
 .container {
    width: 90%;
@@ -23,8 +20,8 @@ body {
 }
 
 .article {
-  padding: 30px;
-  text-align: center;
+   padding: 30px;
+   text-align: center;
 }
 
 .article__title {
