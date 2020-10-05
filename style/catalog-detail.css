@@ -34,8 +34,6 @@ body {
    color: #ffffff;
 }
 
-
-
 .container {
    width: 98%;
    color: #000000;
@@ -74,7 +72,7 @@ body {
 .product-detail__description {
    font-size: 1em;
    margin-top: 20px;
-   line-height: 25px;
+   line-height: 26px;
 }
 
 #darkmode .product-image__image {

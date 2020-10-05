@@ -83,7 +83,6 @@ body {
 }
 
 
-
 .container {
    width: 92%;
    margin: 1px auto 0 auto;
@@ -94,8 +93,6 @@ body {
    border: none;
    box-shadow: none;
 }
-
-
 
 .collapses {
    width: 100%;
@@ -140,8 +137,7 @@ body {
    color: #000000;
    overflow: hidden;
    font-size: 1.05em;
-   line-height: 24px;
-   letter-spacing: 0.8px;
+   line-height: 26px;
    box-sizing: border-box;
    font-family: monospace;
    background-color: #fafafa;
@@ -184,7 +180,6 @@ body {
 #darkmode .collapse__content a {
    color: #ffffff;
 }
-
 
 .contact {
    width: 100%;
@@ -295,7 +290,6 @@ body {
 #darkmode .button-form:hover {
    background-color: #38444d;
 }
-
 
 @media screen and (max-width: 580px) {
    .container {
