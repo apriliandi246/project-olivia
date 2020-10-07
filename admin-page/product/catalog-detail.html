@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/catalog-detail.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="catalog-btn">
+      <a href="#back-to-home#" class="catalog-btn__back">&#10229; Back</a>
+   </div>
+
+   <div class="container">
+      <div class="product-image">
+         <img src="./img/product/black_leather_chair.png" loading="lazy" class="product-image__image" alt="product">
+      </div>
+
+      <div class="product-detail">
+         <h1 class="product-detail__name">Black Leather Chair</h1>
+         <p class="product-detail__price">Rp.200.000</p>
+         <p class="product-detail__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum
+            explicabo,
+            provident, tempora accusamus
+            voluptates fugiat ut quidem aliquid quos corporis, harum fugit minima temporibus laudantium laborum id
+            tenetur commodi.</p>
+      </div>
+
+      <div class="product-model">
+         <h1 class="product-model__title">Model 3D</h1>
+
+         <model-viewer src="./img/3d/chair_oak.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+            auto-rotate camera-controls>
+         </model-viewer>
+      </div>
+   </div>
+
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+
+</html>

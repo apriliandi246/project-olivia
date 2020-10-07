@@ -1,0 +1,20 @@
+- Admin (product) :
+   -> form
+      -> product name
+      -> price
+      -> description
+      -> upload file
+
+   -> show all data
+
+   -> detail product
+
+
+- Blog :
+   -> form
+      -> title
+      -> article
+      
+   -> show all data
+
+   -> detail product

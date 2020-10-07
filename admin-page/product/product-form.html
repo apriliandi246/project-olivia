@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/product-form.css">
+   <title>Product Form</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="title">
+         <h1>New Product</h1>
+         <hr>
+      </div>
+
+      <form spellcheck="false" autocomplete="off">
+         <div class="input-form">
+            <label for="product-name" class="input-form__label">Product Name</label>
+            <input type="text" class="input-form__input" id="product-name" placeholder="product name" name="" autofocus
+               required>
+         </div>
+
+         <div class="input-form">
+            <label for="price" class="input-form__label">Price</label>
+            <input type="number" class="input-form__input" id="price" placeholder="price" name="" required>
+         </div>
+
+         <div class="input-form">
+            <label for="description" class="input-form__label">Description</label>
+            <textarea class="input-form__input" id="description" cols="30" rows="13" placeholder="description" name=""
+               required></textarea>
+         </div>
+
+         <div class="input-form">
+            <label for="image" class="input-form__label">Product Image</label>
+            <input type="file" class="input-form__input" id="image" name="" required>
+         </div>
+
+         <div class="input-form">
+            <label for="3d-model" class="input-form__label">3D Model</label>
+            <input type="file" class="input-form__input" id="3d-model" name="" required>
+         </div>
+
+         <button type="submit" class="button-form">Submit</button>
+         <hr class="line-space-button">
+         <a href="#back-to-home#" class="redirect-button-form">Back</a>
+      </form>
+   </div>
+</body>
+
+</html>

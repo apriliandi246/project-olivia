@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/blog-form.css">
+   <title>Blog-Form</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="title">
+         <h1>New Article</h1>
+         <hr>
+      </div>
+
+      <form spellcheck="false" autocomplete="off">
+         <div class="input-form">
+            <label for="title" class="input-form__label">Title</label>
+            <input type="text" class="input-form__input" id="title" placeholder="title" autofocus required>
+         </div>
+
+         <div class="input-form">
+            <label for="article" class="input-form__label">Article</label>
+            <textarea class="input-form__input" id="article" cols="30" rows="13" placeholder="article body"
+               required></textarea>
+         </div>
+
+         <button type="submit" class="button-form">Submit</button>
+         <hr class="line-space-button">
+         <a href="#back-to-home#" class="redirect-button-form">Back</a>
+      </form>
+   </div>
+</body>
+
+</html>
