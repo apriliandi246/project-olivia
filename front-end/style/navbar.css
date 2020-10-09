@@ -17,6 +17,7 @@
    width: 50px;
    height: 50px;
    cursor: pointer;
+   text-decoration: none;
    background-size: cover;
    transition: box-shadow 0.2s;
    background-repeat: no-repeat;
@@ -30,8 +31,15 @@
    justify-content: space-between;
 }
 
+.navbar__theme {
+   font-size: 2em;
+   cursor: pointer;
+}
+
 .navbar__item {
-   display: inline;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .navbar__link {

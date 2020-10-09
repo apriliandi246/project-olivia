@@ -1,6 +1,3 @@
-@import './navbar.css';
-
-
 body {
    font-size: 16px;
    overflow-x: hidden;
@@ -15,16 +12,17 @@ body {
    transition: opacity 0.3s;
 }
 
-.product-search {
+.searchbar {
    top: 0;
    z-index: 1;
    opacity: 0;
    position: sticky;
+   overflow-x: hidden;
    position: -webkit-sticky;
    transition: opacity 0.3s;
 }
 
-.product-search__input {
+.searchbar__input {
    width: 100%;
    border: none;
    outline: none;
@@ -38,23 +36,23 @@ body {
    box-shadow: 1px 1px 1px 1px #0000001a;
 }
 
-.product-search__input:focus {
+.searchbar__input:focus {
    background-color: #f7efef;
 }
 
-#darkmode .product-search__input {
+#darkmode .searchbar__input {
    color: #ffffff;
    box-shadow: none;
    background-color: #15202b;
    border-bottom: 1px solid #38444d;
 }
 
-#darkmode .product-search__input:focus {
+#darkmode .searchbar__input:focus {
    background-color: #38444d;
 }
 
 .container {
-   margin: -3.5px auto 0 auto;
+   margin: -4.5px auto 0 auto;
 }
 
 .card {
@@ -165,7 +163,7 @@ body {
       margin: 70px auto 100px auto;
    }
 
-   .product-search__input {
+   .searchbar__input {
       padding: 18px;
    }
 
