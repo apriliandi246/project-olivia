@@ -8,15 +8,14 @@
    <link rel="stylesheet" href="./style/navbar.css">
    <link rel="stylesheet" href="./style/catalog.css">
    <script defer src="./js/navbar.js"></script>
+   <script defer src="./js/searchbar.js"></script>
    <script defer src="./js/change-theme.js"></script>
-   <script defer src="./js/theme.js"></script>
-   <script defer src="./js/catalog.js"></script>
    <title>Katalog</title>
 </head>
 
 <body>
    <nav class="navbar">
-      <div class="navbar__brand"></div>
+      <a href="home.html" class="navbar__brand"></a>
 
       <ul class="navbar__items">
          <li class="navbar__item">
@@ -27,6 +26,9 @@
          </li>
          <li class="navbar__item">
             <a href="blog.html" class="navbar__link">Blog</a>
+         </li>
+         <li class="navbar__item">
+            <p class="navbar__theme">🌝</p>
          </li>
       </ul>
 
@@ -129,6 +131,12 @@
          </div>
       </div>
    </div>
+
+   <script>
+      if (localStorage.getItem("theme") === "dark") {
+         document.body.setAttribute("id", "darkmode");
+      }
+   </script>
 </body>
 
 </html>

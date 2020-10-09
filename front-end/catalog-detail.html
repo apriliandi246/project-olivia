@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/reset.css">
    <link rel="stylesheet" href="./style/catalog-detail.css">
-   <script defer src="./js/theme.js"></script>
    <title>Document</title>
 </head>
 
@@ -39,6 +38,11 @@
       </div>
    </div>
 
+   <script>
+      if (localStorage.getItem("theme") === "dark") {
+         document.body.setAttribute("id", "darkmode");
+      }
+   </script>
    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>

@@ -1,7 +1,6 @@
 const searchbar = document.querySelector(".searchbar");
 const navbarItems = document.querySelector(".navbar__items");
 
-
 document.querySelector(".toggle-menu").addEventListener("click", () => {
    navbarItems.classList.toggle("navbar--slide");
 

@@ -1,10 +1,15 @@
 const icons = document.querySelectorAll(".collapse__icon");
 const collapseButtons = document.querySelectorAll(".collapse__button");
 
-
 function setCollapse(index) {
    const collapseContent = collapseButtons[index].nextElementSibling;
-   collapseButtons[index].classList.toggle("collapse__button--active");
+
+   if (localStorage.getItem("theme") === "dark") {
+      collapseButtons[index].classList.toggle("collapse-btn-active-dark");
+
+   } else {
+      collapseButtons[index].classList.toggle("collapse-btn-active-light");
+   }
 
    if (collapseContent.style.display === "block") {
       icons[index].innerHTML = "&#9650;";

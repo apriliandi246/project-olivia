@@ -7,6 +7,7 @@ body {
    background-color: #15202b;
 }
 
+
 .button-blog {
    width: 92%;
    font-weight: 480;
@@ -31,6 +32,7 @@ body {
 #darkmode .button-blog__back {
    color: #ffffff;
 }
+
 
 .container {
    width: 91%;
@@ -83,6 +85,7 @@ body {
 #darkmode p {
    color: #ffffff;
 }
+
 
 @media screen and (min-width: 620px) {
    .container {

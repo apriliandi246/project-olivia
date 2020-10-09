@@ -7,9 +7,11 @@ body {
    background-color: #15202b;
 }
 
+
 .navbar {
    transition: opacity 0.3s;
 }
+
 
 .searchbar {
    top: 0;
@@ -28,7 +30,7 @@ body {
    color: #000000;
    padding: 14.8px;
    font-size: 1.2em;
-   text-indent: 20px;
+   text-indent: 10px;
    font-family: monospace;
    background-color: #fafafa;
    transition: background-color 0.2s;
@@ -50,18 +52,20 @@ body {
    background-color: #38444d;
 }
 
+
 .container {
    width: 90%;
    padding: 20px;
    margin: 30px auto;
    font-family: Ubuntu;
-   align-items: center;
-   justify-content: center;
 }
 
 .article {
    padding: 30px;
    text-align: center;
+   margin-bottom: 30px;
+   background-color: white;
+   box-shadow: 0 0 1px 1px #0000001a;
 }
 
 .article__title {
@@ -92,13 +96,15 @@ body {
 }
 
 #darkmode .article__title:hover {
-   color: #8a2be2;
+   color: #0000ff;
 }
 
 #darkmode .article {
    box-shadow: none;
-   background-color: #15202b;
+   border: 1px solid #273742;
+   background-color: #192734;
 }
+
 
 @media screen and (min-width: 520px) {
    .searchbar__input {

@@ -10,7 +10,6 @@
    <script defer src="./js/navbar.js"></script>
    <script defer src="./js/collapse.js"></script>
    <script defer src="./js/change-theme.js"></script>
-   <script defer src="./js/theme.js"></script>
    <title>Home</title>
 </head>
 
@@ -19,6 +18,9 @@
       <a href="home.html" class="navbar__brand"></a>
 
       <ul class="navbar__items">
+         <li class="navbar__item">
+            <a href="home.html" class="navbar__link">Beranda</a>
+         </li>
          <li class="navbar__item">
             <a href="catalog.html" class="navbar__link">Katalog</a>
          </li>
@@ -38,13 +40,15 @@
       </div>
    </nav>
 
-   <section class="hero">
-      <h1 class="hero__title">Website Name</h1>
-      <p class="hero__description">Lihat dengan detail furniture yang akan Anda beli, tanpa meninggalkan rumah....</p>
-      <span class="hero__bottom-arrow">↓</span>
-   </section>
+   <section class="hero"></section>
 
    <div class="container">
+      <div class="introduce">
+         <h1 class="introduce__title">Website Name</h1>
+         <p class="introduce__text">Jembatan interaksi kamu dengan furniture yang kamu inginkan. <span
+               class="introduce__warn">Tanpa Meninggalkan Rumah!!!!</span></p>
+      </div>
+
       <div class="collapses">
          <h1 class="collapses__title">Kenalan Dulu</h1>
 
@@ -150,6 +154,12 @@
          </form>
       </div>
    </div>
+
+   <script>
+      if (localStorage.getItem("theme") === "dark") {
+         document.body.setAttribute("id", "darkmode");
+      }
+   </script>
 </body>
 
 </html>

@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/reset.css">
    <link rel="stylesheet" href="./style/blog-detail.css">
-   <script defer src="./js/theme.js"></script>
    <title>Detail Blog</title>
 </head>
 
@@ -66,6 +65,12 @@
          </div>
       </div>
    </div>
+
+   <script>
+      if (localStorage.getItem("theme") === "dark") {
+         document.body.setAttribute("id", "darkmode");
+      }
+   </script>
 </body>
 
 </html>
