@@ -1,6 +1,10 @@
 const icons = document.querySelectorAll(".collapse__icon");
 const collapseButtons = document.querySelectorAll(".collapse__button");
 
+for (let index = 0; index < collapseButtons.length; index++) {
+   collapseButtons[index].addEventListener("click", () => setCollapse(index));
+}
+
 function setCollapse(index) {
    const collapseContent = collapseButtons[index].nextElementSibling;
 
@@ -19,9 +23,4 @@ function setCollapse(index) {
       icons[index].innerHTML = "&#9660;";
       collapseContent.style.display = "block";
    }
-}
-
-for (let index = 0; index < collapseButtons.length; index++) {
-   collapseButtons[index].addEventListener("click", () => setCollapse(index));
-   collapseButtons[index].removeEventListener("click", () => setCollapse(index));
 }

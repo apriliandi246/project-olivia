@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 toggleTheme.addEventListener("click", () => {
    if (localStorage.getItem("theme") !== "dark") {
-      document.body.setAttribute("id", "darkmode");;
-      localStorage.setItem("theme", "dark");
       toggleTheme.innerText = "🌚";
+      localStorage.setItem("theme", "dark");
+      document.body.setAttribute("id", "darkmode");;
 
    } else {
+      toggleTheme.innerText = "🌝";
       localStorage.removeItem("theme");
       document.body.setAttribute("id", "");
-      toggleTheme.innerText = "🌝";
    }
 });

@@ -7,8 +7,8 @@ document.querySelector(".toggle-menu").addEventListener("click", () => {
    if (navbarItems.classList[1] === "navbar--slide") {
       if (searchbar !== null) {
          searchbar.style.zIndex = 0;
-
          document.body.style.overflow = "hidden";
+         
       } else {
          document.body.style.overflow = "hidden";
       }
