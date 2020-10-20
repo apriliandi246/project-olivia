@@ -7,7 +7,6 @@ body {
    background-color: #15202b;
 }
 
-
 .button-blog {
    width: 92%;
    font-weight: 480;
@@ -17,7 +16,7 @@ body {
 .button-blog__back {
    padding: 12px;
    color: #000000;
-   font-size: 23px;
+   font-size: 1.3em;
    text-align: center;
    border-radius: 5px;
    letter-spacing: 2px;
@@ -33,7 +32,6 @@ body {
    color: #ffffff;
 }
 
-
 .container {
    width: 91%;
    margin: auto;
@@ -45,7 +43,7 @@ body {
 }
 
 .article-head__title {
-   font-size: 2.2em;
+   font-size: 2em;
    line-height: 49px;
    font-weight: bolder;
    font-family: sans-serif;
@@ -54,7 +52,7 @@ body {
 .article-head__date,
 #darkmode .article-head__date {
    color: #5f9ea0;
-   font-size: 1.3em;
+   font-size: 1.1em;
    line-height: 25px;
    letter-spacing: 2px;
    margin: 15px 0 19px 0;
@@ -66,7 +64,7 @@ body {
 }
 
 .article__body p {
-   font-size: 1.2em;
+   font-size: 1.1em;
    word-spacing: 3px;
    line-height: 30px;
    margin-bottom: 40px;
@@ -98,7 +96,6 @@ ol {
 #darkmode p {
    color: #ffffff;
 }
-
 
 @media screen and (min-width: 620px) {
    .container {
