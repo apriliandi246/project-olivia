@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style/reset.css" />
+      <link rel="stylesheet" href="./style/navbar.css" />
+      <link rel="stylesheet" href="./style/blog.css" />
+      <script defer src="./js/navbar.js"></script>
+      <script defer src="./js/searchbar.js"></script>
+      <script defer src="./js/change-theme.js"></script>
+      <title>Blog</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style/reset.css">
-   <link rel="stylesheet" href="./style/navbar.css">
-   <link rel="stylesheet" href="./style/blog.css">
-   <script defer src="./js/navbar.js"></script>
-   <script defer src="./js/searchbar.js"></script>
-   <script defer src="./js/change-theme.js"></script>
-   <title>Blog</title>
-</head>
+   <body>
+      <nav class="navbar">
+         <a href="home.html" class="navbar__brand"></a>
 
-<body>
+         <ul class="navbar__items">
+            <li class="navbar__item">
+               <a href="home.html" class="navbar__link">Beranda</a>
+            </li>
+            <li class="navbar__item">
+               <a href="catalog.html" class="navbar__link">Katalog</a>
+            </li>
+            <li class="navbar__item">
+               <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+            <li class="navbar__item">
+               <p class="navbar__theme">🌝</p>
+            </li>
+         </ul>
 
-   <nav class="navbar">
-      <a href="home.html" class="navbar__brand"></a>
+         <div class="toggle-menu">
+            <input type="checkbox" class="toggle-menu__trigger" />
+            <span class="toggle-menu__block"></span>
+            <span class="toggle-menu__block"></span>
+            <span class="toggle-menu__block"></span>
+         </div>
+      </nav>
 
-      <ul class="navbar__items">
-         <li class="navbar__item">
-            <a href="home.html" class="navbar__link">Home</a>
-         </li>
-         <li class="navbar__item">
-            <a href="catalog.html" class="navbar__link">Katalog</a>
-         </li>
-         <li class="navbar__item">
-            <a href="blog.html" class="navbar__link">Blog</a>
-         </li>
-         <li class="navbar__item">
-            <p class="navbar__theme">🌝</p>
-         </li>
-      </ul>
+      <form action="" class="searchbar" autocomplete="off">
+         <input
+            type="text"
+            class="searchbar__input"
+            placeholder="Search Article...."
+            name=""
+            required
+         />
+      </form>
 
-      <div class="toggle-menu">
-         <input type="checkbox" class="toggle-menu__trigger">
-         <span class="toggle-menu__block"></span>
-         <span class="toggle-menu__block"></span>
-         <span class="toggle-menu__block"></span>
+      <div class="container">
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
+         <div class="article">
+            <a href="blog-detail.html" class="article__title"
+               >How to use it??</a
+            >
+            <p class="article__published">September 12, 2020</p>
+         </div>
       </div>
-   </nav>
 
-   <form action="" class="searchbar" autocomplete="off">
-      <input type="text" class="searchbar__input" placeholder="Search Article...." name="" required>
-   </form>
-
-   <div class="container">
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-      <div class="article">
-         <a href="blog-detail.html" class="article__title">How to use it??</a>
-         <p class="article__published">September 12, 2020</p>
-      </div>
-   </div>
-
-   <script>
-      if (localStorage.getItem("theme") === "dark") {
-         document.body.setAttribute("id", "darkmode");
-      }
-   </script>
-</body>
-
+      <script>
+         if (localStorage.getItem("theme") === "dark") {
+            document.body.setAttribute("id", "darkmode");
+         }
+      </script>
+   </body>
 </html>

@@ -8,16 +8,13 @@ document.querySelector(".toggle-menu").addEventListener("click", () => {
       if (searchbar !== null) {
          searchbar.style.zIndex = 0;
          document.body.style.overflow = "hidden";
-         
       } else {
          document.body.style.overflow = "hidden";
       }
-
    } else {
       if (searchbar !== null) {
          searchbar.style.zIndex = 1;
          document.body.style.overflow = "auto";
-
       } else {
          document.body.style.overflow = "auto";
       }

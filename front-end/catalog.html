@@ -1,142 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style/reset.css" />
+      <link rel="stylesheet" href="./style/navbar.css" />
+      <link rel="stylesheet" href="./style/catalog.css" />
+      <script defer src="./js/navbar.js"></script>
+      <script defer src="./js/searchbar.js"></script>
+      <script defer src="./js/change-theme.js"></script>
+      <title>Katalog</title>
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./style/reset.css">
-   <link rel="stylesheet" href="./style/navbar.css">
-   <link rel="stylesheet" href="./style/catalog.css">
-   <script defer src="./js/navbar.js"></script>
-   <script defer src="./js/searchbar.js"></script>
-   <script defer src="./js/change-theme.js"></script>
-   <title>Katalog</title>
-</head>
+   <body>
+      <nav class="navbar">
+         <a href="home.html" class="navbar__brand"></a>
 
-<body>
-   <nav class="navbar">
-      <a href="home.html" class="navbar__brand"></a>
+         <ul class="navbar__items">
+            <li class="navbar__item">
+               <a href="home.html" class="navbar__link">Beranda</a>
+            </li>
+            <li class="navbar__item">
+               <a href="catalog.html" class="navbar__link">Katalog</a>
+            </li>
+            <li class="navbar__item">
+               <a href="blog.html" class="navbar__link">Blog</a>
+            </li>
+            <li class="navbar__item">
+               <p class="navbar__theme">🌝</p>
+            </li>
+         </ul>
 
-      <ul class="navbar__items">
-         <li class="navbar__item">
-            <a href="home.html" class="navbar__link">Home</a>
-         </li>
-         <li class="navbar__item">
-            <a href="catalog.html" class="navbar__link">Katalog</a>
-         </li>
-         <li class="navbar__item">
-            <a href="blog.html" class="navbar__link">Blog</a>
-         </li>
-         <li class="navbar__item">
-            <p class="navbar__theme">🌝</p>
-         </li>
-      </ul>
+         <div class="toggle-menu">
+            <input type="checkbox" class="toggle-menu__trigger" />
+            <span class="toggle-menu__block"></span>
+            <span class="toggle-menu__block"></span>
+            <span class="toggle-menu__block"></span>
+         </div>
+      </nav>
 
-      <div class="toggle-menu">
-         <input type="checkbox" class="toggle-menu__trigger">
-         <span class="toggle-menu__block"></span>
-         <span class="toggle-menu__block"></span>
-         <span class="toggle-menu__block"></span>
+      <form action="" class="searchbar" autocomplete="off">
+         <input
+            type="text"
+            class="searchbar__input"
+            placeholder="Search Product...."
+            name=""
+            required
+         />
+      </form>
+
+      <div class="container">
+         <div class="card cf">
+            <div class="card__head">
+               <p class="card__title">Product Name</p>
+            </div>
+
+            <img
+               src="./img/product/bed.jpg"
+               loading="lazy"
+               class="card__image"
+               alt="image"
+            />
+
+            <div class="card__description">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Corrupti, ullam pariatur ad facilis error expedita.
+            </div>
+
+            <div class="card__footer">
+               <a href="catalog-detail.html" class="card__detail-btn"
+                  >Detail Produk &#8594;</a
+               >
+            </div>
+         </div>
+
+         <div class="card cf">
+            <div class="card__head">
+               <p class="card__title">Product Name</p>
+            </div>
+
+            <img
+               src="./img/product/black_leather_chair.png"
+               loading="lazy"
+               class="card__image"
+               alt="image"
+            />
+
+            <div class="card__description">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Corrupti, ullam pariatur ad facilis error expedita.
+            </div>
+
+            <div class="card__footer">
+               <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
+            </div>
+         </div>
+
+         <div class="card cf">
+            <div class="card__head">
+               <p class="card__title">Product Name</p>
+            </div>
+
+            <img
+               src="./img/product/chair_beech.jpg"
+               loading="lazy"
+               class="card__image"
+               alt="image"
+            />
+
+            <div class="card__description">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Corrupti, ullam pariatur ad facilis error expedita.
+            </div>
+
+            <div class="card__footer">
+               <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
+            </div>
+         </div>
+
+         <div class="card cf">
+            <div class="card__head">
+               <p class="card__title">Product Name</p>
+            </div>
+
+            <img
+               src="./img/product/chair_oak.jpg"
+               loading="lazy"
+               class="card__image"
+               alt="image"
+            />
+
+            <div class="card__description">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Corrupti, ullam pariatur ad facilis error expedita.
+            </div>
+
+            <div class="card__footer">
+               <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
+            </div>
+         </div>
+
+         <div class="card cf">
+            <div class="card__head">
+               <p class="card__title">Product Name</p>
+            </div>
+
+            <img
+               src="./img/product/generic_classic.jpg"
+               loading="lazy"
+               class="card__image"
+               alt="image"
+            />
+
+            <div class="card__description">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Corrupti, ullam pariatur ad facilis errorexpedita.
+            </div>
+
+            <div class="card__footer">
+               <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
+            </div>
+         </div>
       </div>
-   </nav>
 
-   <form action="" class="searchbar" autocomplete="off">
-      <input type="text" class="searchbar__input" placeholder="Search Product...." name="" required>
-   </form>
-
-   <div class="container">
-      <div class="card cf">
-         <div class="card__head">
-            <p class="card__title">Product Name</p>
-         </div>
-
-         <img src="./img/product/bed.jpg" loading="lazy" class="card__image" alt="image">
-
-         <div class="card__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ullam pariatur ad facilis error
-            expedita.
-         </div>
-
-         <div class="card__footer">
-            <a href="catalog-detail.html" class="card__detail-btn">Detail Produk &#8594;</a>
-         </div>
-      </div>
-
-      <div class="card cf">
-         <div class="card__head">
-            <p class="card__title">Product Name</p>
-         </div>
-
-         <img src="./img/product/black_leather_chair.png" loading="lazy" class="card__image" alt="image">
-
-         <div class="card__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ullam pariatur ad facilis error
-            expedita.
-         </div>
-
-         <div class="card__footer">
-            <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
-         </div>
-      </div>
-
-      <div class="card cf">
-         <div class="card__head">
-            <p class="card__title">Product Name</p>
-         </div>
-
-         <img src="./img/product/chair_beech.jpg" loading="lazy" class="card__image" alt="image">
-
-         <div class="card__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ullam pariatur ad facilis error
-            expedita.
-         </div>
-
-         <div class="card__footer">
-            <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
-         </div>
-      </div>
-
-
-      <div class="card cf">
-         <div class="card__head">
-            <p class="card__title">Product Name</p>
-         </div>
-
-         <img src="./img/product/chair_oak.jpg" loading="lazy" class="card__image" alt="image">
-
-         <div class="card__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ullam pariatur ad facilis error
-            expedita.
-         </div>
-
-         <div class="card__footer">
-            <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
-         </div>
-      </div>
-
-
-      <div class="card cf">
-         <div class="card__head">
-            <p class="card__title">Product Name</p>
-         </div>
-
-         <img src="./img/product/generic_classic.jpg" loading="lazy" class="card__image" alt="image">
-
-         <div class="card__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, ullam pariatur ad facilis errorexpedita.
-         </div>
-
-         <div class="card__footer">
-            <a href="#" class="card__detail-btn">Detail Produk &#8594;</a>
-         </div>
-      </div>
-   </div>
-
-   <script>
-      if (localStorage.getItem("theme") === "dark") {
-         document.body.setAttribute("id", "darkmode");
-      }
-   </script>
-</body>
-
+      <script>
+         if (localStorage.getItem("theme") === "dark") {
+            document.body.setAttribute("id", "darkmode");
+         }
+      </script>
+   </body>
 </html>

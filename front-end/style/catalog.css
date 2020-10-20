@@ -8,11 +8,9 @@ body {
    background-color: #15202b;
 }
 
-
 .navbar {
    transition: opacity 0.3s;
 }
-
 
 .searchbar {
    top: 0;
@@ -156,7 +154,6 @@ body {
 #darkmode .card__detail-btn:hover {
    background-color: #38444d;
 }
-
 
 @media screen and (min-width: 520px) {
    .container {

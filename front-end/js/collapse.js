@@ -10,7 +10,6 @@ function setCollapse(index) {
 
    if (localStorage.getItem("theme") === "dark") {
       collapseButtons[index].classList.toggle("collapse-btn-active-dark");
-
    } else {
       collapseButtons[index].classList.toggle("collapse-btn-active-light");
    }
@@ -18,7 +17,6 @@ function setCollapse(index) {
    if (collapseContent.style.display === "block") {
       icons[index].innerHTML = "&#9650;";
       collapseContent.style.display = "none";
-
    } else {
       icons[index].innerHTML = "&#9660;";
       collapseContent.style.display = "block";
