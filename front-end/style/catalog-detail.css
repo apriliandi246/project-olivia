@@ -1,3 +1,8 @@
+html {
+   font-size: 17px;
+   line-height: 1.4;
+}
+
 body {
    font-size: 16px;
    overflow-x: hidden;
@@ -70,9 +75,10 @@ body {
 }
 
 .product-detail__description {
-   font-size: 1em;
+   font-size: 1.1em;
    margin-top: 20px;
-   line-height: 26px;
+   line-height: 28px;
+   font-family: Ubuntu;
 }
 
 #darkmode .product-image__image {
@@ -113,6 +119,12 @@ model-viewer {
    border: 2px solid black;
 }
 
+@media (min-width: 800px) {
+   html {
+      font-size: 19px;
+   }
+}
+
 @media screen and (min-width: 1000px) {
    .container {
       width: 40%;
@@ -120,7 +132,7 @@ model-viewer {
    }
 
    .product-detail__name {
-      font-size: 1.7em;
+      font-size: 1.6em;
       line-height: 40px;
       margin-bottom: 20px;
    }
@@ -130,12 +142,17 @@ model-viewer {
    }
 
    .product-detail__description {
-      font-size: 1.1em;
-      line-height: 25px;
+      line-height: 29px;
       margin-top: 20px;
    }
 
    .product-model__title {
       margin-top: 50px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   html {
+      font-size: 22px;
    }
 }
