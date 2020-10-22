@@ -1,6 +1,5 @@
 html {
-   font-size: 17px;
-   line-height: 1.4;
+   font-size: 16px;
 }
 
 body {
@@ -12,9 +11,8 @@ body {
 }
 
 .button-blog {
-   width: 92%;
-   font-weight: 480;
-   margin: 38px auto 70px auto;
+   width: 87%;
+   margin: 38px auto 60px auto;
 }
 
 .button-blog__back {
@@ -56,21 +54,21 @@ body {
 .article-head__date,
 #darkmode .article-head__date {
    color: #5f9ea0;
-   font-size: 1.1em;
-   line-height: 25px;
+   font-size: 1em;
+   line-height: 25.2px;
    letter-spacing: 2px;
-   margin: 15px 0 19px 0;
+   margin: 15px 0 0 0;
    font-family: monospace;
 }
 
 .article__body {
-   margin: 50px 0 70px 0;
+   margin: 40px 0 70px 0;
 }
 
 .article__body p {
    font-size: 1em;
-   word-spacing: 3px;
-   line-height: 30px;
+   word-spacing: 2px;
+   line-height: 25px;
    margin-bottom: 40px;
    font-family: Ubuntu;
    letter-spacing: 0.5px;
@@ -119,11 +117,15 @@ ol {
    html {
       font-size: 18px;
    }
+
+   .article__body p {
+      line-height: 33px;
+   }
 }
 
 @media screen and (min-width: 1200px) {
    html {
-      font-size: 20px;
+      font-size: 21px;
    }
 
    .container {
