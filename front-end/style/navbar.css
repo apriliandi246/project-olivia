@@ -45,7 +45,8 @@
 .navbar__link {
    padding: 6px;
    color: #000000;
-   font-size: 1em;
+   font-size: 1.1em;
+   letter-spacing: 1px;
    text-decoration: none;
    transition: color 0.2s;
    font-family: Arial, Helvetica, sans-serif;
