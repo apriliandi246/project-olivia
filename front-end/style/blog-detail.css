@@ -18,7 +18,7 @@ body {
 .button-blog__back {
    padding: 12px;
    color: #000000;
-   font-size: 1.3em;
+   font-size: 1.2em;
    text-align: center;
    border-radius: 5px;
    letter-spacing: 2px;
@@ -57,7 +57,7 @@ body {
    font-size: 1em;
    line-height: 25.2px;
    letter-spacing: 2px;
-   margin: 15px 0 0 0;
+   margin: 6px 0 0 0;
    font-family: monospace;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .article__body p {
    font-size: 1em;
-   word-spacing: 2px;
+   word-spacing: 1px;
    line-height: 25px;
    margin-bottom: 40px;
    font-family: Ubuntu;
@@ -120,6 +120,11 @@ ol {
 
    .article__body p {
       line-height: 33px;
+   }
+
+   .article-head__date,
+   #darkmode .article-head__date {
+      margin-top: 17px;
    }
 }
 
